@@ -1,0 +1,36 @@
+{
+    "name": "adext/curl",
+    "description": "Curl Facade for Adext Microservices",
+    "version" : "0.0.1",
+    "autoload": {
+        "psr-4": {
+            "Adext\\Curl\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Adext",
+            "email": "efrain.e@adext.com"
+        }
+    ],
+    "require": {
+        "php": "^8.0",
+        "guzzlehttp/guzzle": "^7.4"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Adext\\Curl\\Tests\\": "tests/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Adext\\Curl\\CurlServiceProvider"
+            ]
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit packages/adext/curl"
+    },
+    "minimum-stability": "dev"
+}
