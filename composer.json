@@ -1,10 +1,10 @@
 {
-    "name": "adext/curl",
+    "name": "adextdev/curl",
     "description": "Curl Facade for Adext Microservices",
     "version" : "0.0.1",
     "autoload": {
         "psr-4": {
-            "Adext\\Curl\\": "src/"
+            "Adextdev\\Curl\\": "src/"
         }
     },
     "authors": [
@@ -19,13 +19,13 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Adext\\Curl\\Tests\\": "tests/"
+            "Adextdev\\Curl\\Tests\\": "tests/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Adext\\Curl\\CurlServiceProvider"
+                "Adextdev\\Curl\\CurlServiceProvider"
             ]
         }
     },
